@@ -53,6 +53,7 @@ img {
 .flex-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .container-header {
@@ -85,8 +86,6 @@ img {
 .nav-list {
     display: flex;
 
-    padding-top: 32px;
-    padding-bottom: 32px;
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
@@ -100,6 +99,9 @@ img {
 }
 
 .nav-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -120,8 +122,6 @@ img {
     display: flex;
     margin-left: auto;
 
-    padding-top: 32px;
-    padding-bottom: 32px;
     padding-left: 0;
     margin: 0;
 
@@ -132,6 +132,10 @@ img {
 }
 
 .contacts-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -166,8 +170,9 @@ img {
 }
 
 .button {
+    display: block;
     margin-top: 30px;
-    margin-left: 700px;
+    margin: 0 auto;
     padding: 10px 32px;
 
     font-family: inherit;
@@ -317,7 +322,13 @@ img {
 
 /* Стилі сторінки Portfolio */
 
+.filter-item:not(:last-child){
+    margin-right: 8px;
+}
+
 .filter-button {
+    padding: 6px 22px;
+
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -344,9 +355,17 @@ img {
     color: var(--white);
 }
 
-.project-item a {
-    text-decoration: none;
-    color: inherit;
+.project-item{
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.project-item:nth-child(3n){
+    margin-right: 0;
+}
+
+.project-item:nth-last-child(-n+3){
+    margin-bottom: 0;
 }
 
 .project-title {
