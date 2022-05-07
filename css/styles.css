@@ -1,4 +1,5 @@
 :root {
+    --header-line-color: #ECECEC;
     --title-color: #212121;
     --text-color: #757575;
     --accent-color: #2196F3;
@@ -12,7 +13,6 @@ body {
     font-family: 'Roboto', sans-serif;
     color: var(--text-color);
     font-size: 14px;
-    width: 1600px;
 }
 
 /* Обнуляючі стилі */
@@ -44,9 +44,7 @@ img {
 .container {
     width: 1200px;
     margin: 0 auto;
-    padding-top: 94px;
     padding-right: 15px;
-    padding-bottom: 94px;
     padding-left: 15px;
 }
 
@@ -56,14 +54,19 @@ img {
     flex-wrap: wrap;
 }
 
-.container-header {
-    padding-top: 0;
-    padding-bottom: 0;
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.header-section {
+    border-bottom: 1px solid var(--header-line-color);
 }
 
 .navigation {
     display: flex;
     align-items: center;
+    margin-right: 330px;
 }
 
 .logo {
@@ -119,7 +122,7 @@ img {
 
 .contacts-list {
     display: flex;
-    margin-left: auto;
+    /* margin-left: auto; */
 
     padding-left: 0;
     margin: 0;
@@ -158,6 +161,8 @@ img {
 }
 
 .page-title {
+    margin-bottom: 30px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -170,7 +175,6 @@ img {
 
 .button {
     display: block;
-    margin-top: 30px;
     margin: 0 auto;
     padding: 10px 32px;
 
@@ -304,6 +308,10 @@ img {
     color: var(--white);
 }
 
+.footer .logo {
+    margin-right: 0;
+}
+
 .adress-item {
     font-weight: 400;
     line-height: 1.71;
@@ -320,8 +328,11 @@ img {
 }
 
 /* Стилі сторінки Portfolio */
+.filter-list {
+    margin-bottom: 50px;
+}
 
-.filter-item:not(:last-child){
+.filter-item:not(:last-child) {
     margin-right: 8px;
 }
 
@@ -354,16 +365,16 @@ img {
     color: var(--white);
 }
 
-.project-item{
+.project-item {
     margin-right: 30px;
     margin-bottom: 30px;
 }
 
-.project-item:nth-child(3n){
+.project-item:nth-child(3n) {
     margin-right: 0;
 }
 
-.project-item:nth-last-child(-n+3){
+.project-item:nth-last-child(-n+3) {
     margin-bottom: 0;
 }
 
