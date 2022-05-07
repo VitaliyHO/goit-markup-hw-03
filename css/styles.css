@@ -64,7 +64,6 @@ img {
 .navigation {
     display: flex;
     align-items: center;
-    margin-right: 330px;
 }
 
 .logo {
