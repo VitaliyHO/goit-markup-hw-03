@@ -200,6 +200,10 @@ img {
     background-color: var(--button-hover-coolor);
 }
 
+.preference {
+    padding-bottom: 0;
+}
+
 .invisible-title {
     display: none;
 }
@@ -252,7 +256,6 @@ img {
 }
 
 .team-item {
-    height: 368px;
     background-color: var(--white);
     border-radius: 0 0 4px 4px;
     box-shadow: #acacac 0 1px 2px 1px;
@@ -262,8 +265,9 @@ img {
     margin-right: 30px;
 }
 
-.employee-photo {
-    margin-bottom: 30px;
+.employee-description {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 
@@ -300,6 +304,11 @@ img {
     width: 1200px;
 }
 
+.footer a.logo {
+    display: block;
+    margin-bottom: 20px;
+}
+
 .logo-footer {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -314,9 +323,10 @@ img {
 }
 
 .adress-item {
+    margin-bottom: 9px;
+
     font-weight: 400;
     line-height: 1.71;
-
     color: var(--white);
 }
 
